@@ -1,0 +1,129 @@
+/* VARIABILI */
+
+:root {
+    --main-text-color: #F5EEE6;
+    --main-bk-color: #131313;
+    --header-padding: 1.5rem; /* PH */
+    --header-font-size: 1rem;
+    --header-gap: 3rem; /* GN */
+    --font-size-title: 7rem;
+    --font-size-descripton: 3rem ;
+    --titolo-descrizione-margin: 8rem;
+
+}
+
+
+/* BODY */
+
+body{
+    /* background-color: var(--main-bk-color) !important; */
+}
+
+.contenuto-descrittivo{
+    background-image: url(img/francesco-ungaro-gkyAltPdtM8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* HEADER */
+
+header .logo a{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+}
+
+.menu-navigazione{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--main-text-color);
+    padding: var(--header-padding) 0;
+}
+
+header .menu{
+    display: flex;
+    list-style: none;
+    gap: var(--header-gap);
+    margin-bottom: unset;
+}
+
+header .menu li{
+    width: 70px;
+}
+
+.menu a:hover{
+    font-weight: bold;
+}
+
+header a{
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: var(--header-font-size);
+}
+
+.sfocatura{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    background-color: rgba(19, 19, 19, .15);
+    backdrop-filter: blur(6px);
+    z-index: -1;
+}
+
+/* MAIN */
+
+main{
+    
+}
+
+main .titolo-descrizione .contenuto{
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-text-color);
+    font-size: var(--font-size-descripton);
+    margin-top: var(--titolo-descrizione-margin);
+}
+
+main h1{
+    font-size: clamp( 2rem, 7vw, var(--font-size-title));
+}
+
+main .titolo-descrizione{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottone01{
+    display: flex;
+    justify-content: end;
+    margin-top: 6rem;
+}
+
+.bottone01 a{
+    display: inline-block;
+    padding: 5px 20px;
+    color: var(--main-text-color);
+    text-decoration: none;
+    border: 1px solid var(--main-text-color);
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+.bottone01 a:hover{
+    font-weight: bold;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
