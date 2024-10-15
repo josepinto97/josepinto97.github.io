@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    background-color: #e5d5bc;
+}
+
+header .logo {
+    padding: 1%;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #474747;
+    padding: 3px 5px;
+}
+
+header li a:hover {
+    color: #e5d5bc;
+    background-color: #474747;
+    border-radius: 30px;
+}
+
+header .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+    padding: 1%;
+    width: 70%;
+    justify-content: right;
+}
+
+/* MAIN */
+
+h1 {
+    font-size: 3rem;
+    color: #a76a4b;
+}
+
+main .card1 h3 {
+    margin: 3% 0;
+    font-size: 1.7rem;
+    border-top: 3px solid #a76a4b;
+    padding-top: 30px;
+    color: #474747;
+    display: inline-block;
+}
+
+main .card1 p {
+    font-size: 1.2rem;
+    color: #474747;
+    margin: 0 0 5% 0;
+}
+
+main a {
+    font-size: 1.2rem;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+main .card1 {
+    background-color: #e5d5bc;
+    text-align: center;
+    padding: 3% 30% 0 30%;
+    position: relative;
+}
+
+main .pulsanti {
+    justify-content: center;
+    display: flex;
+    gap: 20%;
+    padding: 0 0 25% 0;
+}
+
+main .pulsanteMarrone a {
+    color: #a76a4b;
+    text-decoration: none;
+}
+
+main .pulsanteMarrone a:hover {
+    background-color: #a76a4b;
+    color: #e5d5bc;
+    border-radius: 30px;
+}
+
+main .pavimento::after {
+    content: ' ';
+    display: block;
+    height: 30%;
+    width: 100%;
+    background-color: #a76a4b;
+    padding: 5% 0;
+}
+
+main .immaginiCard1 .sedia,
+.lampada {
+    height: 40%;
+    width: auto;
+}
+
+main .sedia {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+main .lampada {
+    position: absolute;
+    left: 0;
+    top: 28%;
+}
+
+main .vaso {
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    height: 55%;
+}
+
+main .numeri {
+    font-size: 3rem;
+}
+
+main .risultati {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #474747;
+    color: #e5d5bc;
+    height: 150px;
+    align-items: center;
+}
+
+main .card2 {
+    text-align: center;
+    background-color: #e5d5bc;
+    color: #474747;
+    position: relative;
+    overflow: hidden;
+}
+
+main .informazioni {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+main .informazioni article {
+    width: 400px;
+}
+
+main .card2 h2 {
+    font-size: 3rem;
+    color: #a76a4b;
+}
+
+main .card2 .titoletto {
+    padding: 4% 30% 8% 30%;
+}
+
+main .informazioni img {
+    border-radius: 50%;
+    height: auto;
+    width: 400px;
+    margin-bottom: 12%;
+}
+
+main .card2 h3 {
+    font-size: 1.7rem;
+    color: #a76a4b;
+}
+
+main .card2 p {
+    font-size: 1.2rem;
+}
+
+main .informazioni p {
+    margin: 5% 0;
+}
+
+main .pulsanteVuoto a {
+    text-decoration: none;
+    color: #a76a4b;
+    padding: 5px 10px;
+    border: solid #a76a4b;
+    border-radius: 20px;
+}
+
+main .pulsanteVuoto a:hover {
+    background-color: #a76a4b;
+    color: #e5d5bc;
+}
+
+main .pulsanteVuoto {
+    margin-bottom: 10%;
+}
+
+main .bordoVuotoSx::after {
+    content: ' ';
+    border: solid #474747;
+    padding: 45px 15%;
+    position: absolute;
+    right: -20%;
+    top: 8%;
+    border-radius: 100px;
+}
+
+main .bordoVuotoDx::after {
+    content: ' ';
+    border: solid #474747;
+    padding: 45px 15%;
+    position: absolute;
+    left: -20%;
+    top: 8%;
+    border-radius: 100px;
+}
+
+main .card3 {
+    display: flex;
+    height: 800px;
+}
+
+main .card3 .progetti {
+    background-color: #a76a4b;
+    color: #e5d5bc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0 10%;
+}
+
+main .card3 img {
+    height: 800px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+main .card3 .progetti{
+    width: 50%;
+}
+
+main .card3 .immagineCard3{
+    width: 50%;
+}
+
+main .card3 h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    border-bottom: solid #e5d5bc;
+    padding-bottom: 10%;
+}
+
+main .card3 p {
+    font-size: 1.2rem;
+    margin-bottom: 10%;
+}
+
+main .card3 .pulsanteBianco a {
+    color: #a76a4b;
+    background-color: #e5d5bc;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+main .card3 .pulsanteBianco a:hover {
+    background-color: #474747;
+    color: #e5d5bc;
+}
+
+main .card4 {
+    background-color: #e5d5bc;
+    position: relative;
+    color: #474747;
+}
+
+main .card4 .mobile {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    height: 40%;
+}
+
+main .card4 .piantina {
+    position: absolute;
+    right: 0;
+    bottom: 48%;
+    height: 15%;
+}
+
+main .card4 h2 {
+    font-size: 3rem;
+}
+
+main .card4  p {
+    font-size: 1.2rem;
+    border-top: solid #474747;
+    margin-top: 10%;
+    padding-top: 10%;
+}
+
+main .card4 .novita {
+    width: 35%;
+    padding: 10% 0 5% 10%;
+}
+
+main .card4 .pavimento2::after{
+    content: ' ';
+    background-color: #dec399;
+    width: 100%;
+    padding: 5% 0;
+    display: block;
+}
+
+main .pulsanteNero{
+    margin-top: 10%;
+}
+
+main .pulsanteNero a{
+    color: #dec399;
+    background-color: #474747;
+    border-radius: 30px;
+}
+
+main .pulsanteNero a:hover {
+    color: #474747;
+    background-color: #e5d5bc;
+    border: 2px solid #474747;
+    border-radius: 30px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #474747;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    padding: 3% 0;
+    flex-wrap: wrap;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 1% 0;
+}
+
+footer h5{
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 5%;
+}
+
+footer .chiSiamo{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .cosaFacciamo{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .azienda{
+    display: flex;
+    flex-direction: column;
+}
+
+/* MEDIA */
+
+@media (max-width: 991px){
+
+    .sedia, .vaso, .lampada, .mobile, .piantina, .pavimento2, .pavimento{
+        display: none;
+    }
+
+    main .card4{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 680px){
+
+    html{
+        font-size: 12px;
+    }
+
+    main .pulsanti{
+        flex-direction: column;
+    }
+
+    main .pulsanteMarrone{
+        margin: 5% 0;
+    }
+}
