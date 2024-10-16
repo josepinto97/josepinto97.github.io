@@ -192,11 +192,13 @@ main .progetto{
 footer{
     padding-top: var(--titolo-descrizione-margin);
     background-image: url(img/francesco-ungaro-gkyAltPdtM8-unsplash.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     color: var(--main-text-color);
+    font-size: 2rem;/* da modificare */
 }
 
 .gradient-overlay2 {
@@ -207,4 +209,34 @@ footer{
     top: 0;
     background: linear-gradient(to top, rgba(19, 19, 19, 0) 0%, rgba(19, 19, 19, 1) 100%);
     pointer-events: none; /* Permette di cliccare sugli elementi sottostanti */
+}
+
+footer .top-frameworks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .frameworks{
+    text-align: end;
+}
+
+footer .form-contato{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .socials{
+    display: flex;
+    justify-content: end;
+    gap: 100px;
+    padding-bottom: 3rem;
+}
+
+footer .contenitore-footer > div{
+    margin-top: 3rem;
+}
+
+footer .contenitore-footer .top-frameworks{
+    margin-top: 0;
 }
