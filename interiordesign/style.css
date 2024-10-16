@@ -1,4 +1,4 @@
-/* VARIABILI */
+/*------------------- VARIABILI -------------------*/
 
 :root {
     --main-text-color: #F5EEE6;
@@ -9,24 +9,25 @@
     --font-size-title: 7rem;
     --font-size-descripton: 3rem ;
     --titolo-descrizione-margin: 8rem;
+    --button-margin: 6rem;
+    --lista-progetti-margin: 7rem;
 
 }
 
 
-/* BODY */
+/*------------------- BODY -------------------*/
 
 body{
-    /* background-color: var(--main-bk-color) !important; */
+    background-color: var(--main-bk-color) !important;
 }
 
-.contenuto-descrittivo{
-    background-image: url(img/francesco-ungaro-gkyAltPdtM8-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+a{
+    text-decoration: none !important;
+    color: var(--main-text-color) !important;
 }
 
-/* HEADER */
+
+/*------------------- HEADER -------------------*/
 
 header .logo a{
     font-weight: bold;
@@ -39,6 +40,7 @@ header{
     left: 50%;
     transform: translate(-50%);
     width: 100%;
+    z-index: 3;
 }
 
 .menu-navigazione{
@@ -56,12 +58,8 @@ header .menu{
     margin-bottom: unset;
 }
 
-header .menu li{
-    width: 70px;
-}
-
 .menu a:hover{
-    font-weight: bold;
+    border-bottom: 1px solid var(--main-text-color);
 }
 
 header a{
@@ -81,10 +79,26 @@ header a{
     z-index: -1;
 }
 
-/* MAIN */
+/*------------------- MAIN -------------------*/
 
-main{
-    
+
+/* TITOLO E DESCRIZIONE */
+.contenuto-descrittivo{
+    background-image: url(img/francesco-ungaro-gkyAltPdtM8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+}
+
+.gradient-overlay {
+    position: absolute;
+    height: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(19, 19, 19, 0) 0%, rgba(19, 19, 19, 1) 100%);
+    pointer-events: none; /* Permette di cliccare sugli elementi sottostanti */
 }
 
 main .titolo-descrizione .contenuto{
@@ -95,8 +109,12 @@ main .titolo-descrizione .contenuto{
     margin-top: var(--titolo-descrizione-margin);
 }
 
+main .titolo-descrizione-last{
+    padding-bottom: var(--titolo-descrizione-margin);
+}
+
 main h1{
-    font-size: clamp( 2rem, 7vw, var(--font-size-title));
+    font-size: clamp( 2rem, 7vw, var(--font-size-title)); /* TODO responsive */
 }
 
 main .titolo-descrizione{
@@ -107,7 +125,7 @@ main .titolo-descrizione{
 .bottone01{
     display: flex;
     justify-content: end;
-    margin-top: 6rem;
+    margin-top: var(--button-margin);
 }
 
 .bottone01 a{
@@ -120,10 +138,73 @@ main .titolo-descrizione{
     border-radius: 20px;
 }
 
-.bottone01 a:hover{
-    font-weight: bold;
-}
-
 .reverse{
     flex-direction: row-reverse;
+}
+
+/* LISTA PROGETTI HOME */
+
+main .lista-progetti{
+    color: var(--main-text-color);
+    padding: var(--titolo-descrizione-margin) 0;
+}
+
+.lista-progetti h3{
+    display: flex;
+    justify-content: center;
+}
+
+main .progetto{
+    display: flex;
+    margin-top: var(--lista-progetti-margin);
+    justify-content: space-between;
+    transition: ease-in 3s;
+}
+
+.progetto-img {
+    position: relative;
+    transition: left 1s ease-in-out;
+    left: 0;
+}
+
+.progetto-descrizione {
+    position: relative;
+    transition: left 1s ease-in-out;
+    left: 0;
+}
+
+.progetto:hover .progetto-img {
+    left: -23%;
+}
+
+.progetto:hover .progetto-descrizione {
+    left: 26%;
+}
+
+.progetto-descrizione, .progetto-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------- FOOTER -------------------*/
+
+footer{
+    padding-top: var(--titolo-descrizione-margin);
+    background-image: url(img/francesco-ungaro-gkyAltPdtM8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    color: var(--main-text-color);
+}
+
+.gradient-overlay2 {
+    position: absolute;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to top, rgba(19, 19, 19, 0) 0%, rgba(19, 19, 19, 1) 100%);
+    pointer-events: none; /* Permette di cliccare sugli elementi sottostanti */
 }
