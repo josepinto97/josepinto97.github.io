@@ -95,24 +95,41 @@
         <div class="container contenitore-footer">
             <div class="top-frameworks">
                 <div>
-                    mi riporta su
+                    <a href=""><i class="bi bi-arrow-up"></i></a>
                 </div>
                 <div class="frameworks">
-                    frameworks
+                    <div class="frameworks-img">
+                        <img src="img/bootstrap.jpg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="form-contato">
-                <div>
-                    testo
-                </div>
-                <div>
-                    collegamento alla mail o form
-                </div>
+                <form class="col-8" action="send-email.php" method="POST">
+                    <div class="form-titolo">
+                        <span>Vuoi contattarmi?</span>
+                    </div>
+                    <div class="mail">
+                        <label for="email">Email:</label>
+                        <input class="inserimento" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="testo">
+                        <label for="message">Messaggio:</label>
+                        <textarea class="inserimento" id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Invia</button>
+                </form>
+
             </div>
             <div class="socials">
-                <div>linkedin</div>
-                <div>github</div>
-                <div>twitter</div>
+                <div>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="bi bi-github"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                </div>
             </div>
         </div>
     </footer>
