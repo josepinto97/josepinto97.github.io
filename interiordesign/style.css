@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*----- VARIABILI -----*/
+
+:root {
+    --colore-header: black;
+}
+
+
+/*----- GENERALI -----*/
+
+ul {
+    padding-left: unset;
+    margin-bottom: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/*----- HEADER -----*/
+
+header {
+    background-color: var(--colore-header);
+}
+
+header .contenitore-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    min-height: 10px;
+    min-width: 10px;
+    height: 80px;
+}
+
+header .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+header .menu{
+    display: flex;
+    align-items: center;
+}
+
+header .menu-hamburger {
+    color: white;
+    font-size: 40px;
+}
+
+header .menu-hamburger i {
+    margin: auto;
+}
+
+header .sottomenu {
+    display: none;
+}
