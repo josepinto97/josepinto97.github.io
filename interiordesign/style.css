@@ -62,4 +62,5 @@ header .menu-hamburger i {
 
 header .sottomenu {
     display: none;
+    visibility: hidden;
 }
