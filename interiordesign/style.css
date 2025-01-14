@@ -35,13 +35,13 @@ header .contenitore-header {
 }
 
 header .logo {
-    min-height: 10px;
+    min-height: 80px;
     min-width: 10px;
     height: 80px;
 }
 
 header .logo img {
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 
