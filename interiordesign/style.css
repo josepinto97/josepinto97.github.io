@@ -53,6 +53,7 @@ header .menu{
 header .menu-hamburger {
     color: white;
     font-size: 40px;
+    margin: auto;
 }
 
 header .menu-hamburger i {
