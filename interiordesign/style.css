@@ -7,7 +7,7 @@
 /*----- VARIABILI -----*/
 
 :root {
-    --colore-header: black;
+    --colore-primario: black;
     --colore-linee-menu: grey;
     --fontsize-voci-menu: 30px;
     --fontsize-social: 25px;
@@ -34,16 +34,23 @@ a {
 }
 
 
+/*----- BODY -----*/
+
+html, body {
+    overflow-x: hidden;
+}
+
+
 /*----- HEADER -----*/
 
 header {
-    background-color: var(--colore-header);
-    position: relative;
+    background-color: var(--colore-primario);
 }
 
 header .contenitore-header {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 header .logo {
@@ -72,7 +79,7 @@ header .menu-hamburger i {
     margin: auto;
 }
 
-header .chiusura-menu{
+header .chiusura-menu {
     color: var(--colore-icone-menu);
     font-size: var(--fontsize-icone-menu);
     width: 100%;
@@ -80,16 +87,17 @@ header .chiusura-menu{
 }
 
 header .sottomenu {
-    background-color: var(--colore-header);
+    background-color: var(--colore-primario);
     position: absolute;
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    left: 100%;
+    left: 100vw;
     top: 0;
     transition: 1s;
+    z-index: 2;
 }
 
 header .sottomenu-voci {
@@ -145,4 +153,33 @@ header .contatti a {
 header .contatti i {
     font-size: var(--fontsize-social);
     color: var(--colore-social);
+}
+
+
+/*----- MAIN -----*/
+
+main{
+    background-color: var(--colore-primario);
+    padding: 50px 0;
+}
+
+main .immagine-home img{
+    width: 100%;
+    height: auto;
+}
+
+main .immagine-titolo{
+    position: relative;
+}
+
+main .titolo{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+main .testo{
+    color: white;
 }
