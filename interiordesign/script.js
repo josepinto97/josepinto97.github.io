@@ -12,8 +12,8 @@ function apri_menu() {
     let header = document.getElementById('header');
 
     if (!sottomenu_aperto) {
-        header.style.overflow = 'visible';
         sottomenu.style.left = '0';
+        sottomenu.style.position = 'fixed';
         sottomenu_aperto = true;
     }
 
@@ -27,12 +27,8 @@ function chiudi_menu() {
 
     if (sottomenu_aperto) {
         sottomenu.style.left = '100%';
+        sottomenu.style.position = 'absolute';
         sottomenu_aperto = false;
-
-/*         sottomenu.addEventListener('transitionend', function onTransitionEnd() {
-            header.style.overflow = 'hidden';
-            sottomenu.removeEventListener('transitionend', onTransitionEnd);
-        }); */
     }
 
 }
