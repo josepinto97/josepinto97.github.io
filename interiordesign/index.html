@@ -19,13 +19,29 @@
             <div class="logo">
                 <img src="img/logo.jpg" alt="logo sito">
             </div>
-            <nav class="menu">
-                <i class="menu-hamburger bi bi-list"></i>
-                <ul class="sottomenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contatti</a></li>
-                </ul>
-            </nav>
+            <div class="menu">
+                <i onclick="apri_menu()" id="menu_hamburger" class="menu-hamburger bi bi-list"></i>
+                <nav class="sottomenu container" id="menu_sottomenu">
+                    <i onclick="chiudi_menu()" class="bi bi-x chiusura-menu"></i>
+                    <ul class="sottomenu-voci">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contatti</a></li>
+                    </ul>
+                    <div class="social-contatti">
+                        <div class="social">
+                            <a href="https://www.instagram.com/ "><i class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="contatti">
+                            <div class="telefono">
+                                <i class="bi bi-telephone"></i><a href="tel:+391111111111">1111111111</a>
+                            </div>
+                            <div class="email">
+                                <i class="bi bi-envelope"></i><a href="mailto:esempio@gramil.com">esempio@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 

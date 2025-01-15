@@ -9,6 +9,11 @@
 :root {
     --colore-header: black;
     --colore-linee-menu: grey;
+    --fontsize-voci-menu: 30px;
+    --fontsize-social: 25px;
+    --colore-social: white;
+    --colore-icone-menu: white;
+    --fontsize-icone-menu: 40px;
 }
 
 
@@ -58,8 +63,8 @@ header .menu {
 }
 
 header .menu-hamburger {
-    color: white;
-    font-size: 40px;
+    color: var(--colore-icone-menu);
+    font-size: var(--fontsize-icone-menu);
     margin: auto;
 }
 
@@ -67,9 +72,14 @@ header .menu-hamburger i {
     margin: auto;
 }
 
+header .chiusura-menu{
+    color: var(--colore-icone-menu);
+    font-size: var(--fontsize-icone-menu);
+    width: 100%;
+    text-align: end;
+}
+
 header .sottomenu {
-    /* display: none;
-    visibility: hidden; */
     background-color: var(--colore-header);
     position: absolute;
     height: 100vh;
@@ -77,22 +87,62 @@ header .sottomenu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    left: 0;
-    top: 99%;
-    padding-top: 50px;
+    left: 100%;
+    top: 0;
+    transition: 1s;
 }
 
-header .sottomenu li{
-    font-size: 30px;
+header .sottomenu-voci {
+    width: 100%;
+}
+
+header .sottomenu-voci li {
+    font-size: var(--fontsize-voci-menu);
     width: 100%;
     text-align: center;
+    padding: 10px 0;
 }
 
-header .sottomenu > :first-child{
-    border-top: solid var(--colore-linee-menu);
-    border-bottom: solid var(--colore-linee-menu);
+header .sottomenu-voci> :first-child {
+    border-top: solid 1px var(--colore-linee-menu);
+    border-bottom: solid 1px var(--colore-linee-menu);
 }
 
-header .sottomenu > :last-child{
-    border-bottom: solid var(--colore-linee-menu);
+header .sottomenu-voci a {
+    width: 100%;
+    display: block;
+}
+
+header .sottomenu-voci> :last-child {
+    border-bottom: solid 1px var(--colore-linee-menu);
+}
+
+header .social {
+    width: 100%;
+    font-size: var(--fontsize-social);
+    color: var(--colore-social);
+}
+
+header .social-contatti {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+header .email,
+.telefono {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+header .contatti a {
+    display: flex;
+    align-items: center;
+}
+
+header .contatti i {
+    font-size: var(--fontsize-social);
+    color: var(--colore-social);
 }
