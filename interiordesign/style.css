@@ -8,6 +8,7 @@
 
 :root {
     --colore-header: black;
+    --colore-linee-menu: grey;
 }
 
 
@@ -22,11 +23,17 @@ li {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 
 /*----- HEADER -----*/
 
 header {
     background-color: var(--colore-header);
+    position: relative;
 }
 
 header .contenitore-header {
@@ -45,7 +52,7 @@ header .logo img {
     height: 100%;
 }
 
-header .menu{
+header .menu {
     display: flex;
     align-items: center;
 }
@@ -61,6 +68,31 @@ header .menu-hamburger i {
 }
 
 header .sottomenu {
-    display: none;
-    visibility: hidden;
+    /* display: none;
+    visibility: hidden; */
+    background-color: var(--colore-header);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    top: 99%;
+    padding-top: 50px;
+}
+
+header .sottomenu li{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+header .sottomenu > :first-child{
+    border-top: solid var(--colore-linee-menu);
+    border-bottom: solid var(--colore-linee-menu);
+}
+
+header .sottomenu > :last-child{
+    border-bottom: solid var(--colore-linee-menu);
 }
