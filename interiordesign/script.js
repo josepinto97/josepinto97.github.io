@@ -23,7 +23,7 @@ function chiudi_menu() {
     let sottomenu = document.getElementById('menu_sottomenu');
 
     if (sottomenu_aperto) {
-        sottomenu.style.left = '99%';
+        sottomenu.style.left = '100%';
         sottomenu_aperto = false;
     }
 
