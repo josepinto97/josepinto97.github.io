@@ -14,6 +14,9 @@
     --colore-social: white;
     --colore-icone-menu: white;
     --fontsize-icone-menu: 40px;
+    --colore-vetrina-macchina: #171717;
+    --colore-testo-vetrine: white;
+    --colore-elenco-macchine: white;
 }
 
 
@@ -33,10 +36,15 @@ a {
     color: white;
 }
 
+p {
+    margin-bottom: unset;
+}
+
 
 /*----- BODY -----*/
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -45,12 +53,12 @@ html, body {
 
 header {
     background-color: var(--colore-primario);
+    position: relative;
 }
 
 header .contenitore-header {
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
 header .logo {
@@ -158,28 +166,94 @@ header .contatti i {
 
 /*----- MAIN -----*/
 
-main{
+main {
     background-color: var(--colore-primario);
     padding: 50px 0;
 }
 
-main .immagine-home img{
+main .immagine-home img {
     width: 100%;
     height: auto;
 }
 
-main .immagine-titolo{
+main .immagine-titolo {
     position: relative;
 }
 
-main .titolo{
+main .titolo {
     position: absolute;
     bottom: 0;
     color: white;
     width: 100%;
-    text-align: center;
 }
 
-main .testo{
+main .testo {
     color: white;
+    margin: 20px 0;
+}
+
+/* vetrina macchina singola */
+
+main h3{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 30px 0;
+    color: var(--colore-elenco-macchine);
+}
+
+main .vetrina-macchina {
+    border: solid 2px white;
+    border-radius: 10px;
+    background-color: var(--colore-vetrina-macchina);
+    overflow: hidden;
+}
+
+main .modello-macchina{
+    width: 100%;
+    text-align: center;
+    color: var(--colore-testo-vetrine);
+}
+
+main .informazioni-macchina,
+.prezzo-pulsante {
+    padding: 8px;
+}
+
+main .vetrina-macchina {
+    width: 100%;
+}
+
+main .vetrina-macchina img {
+    width: 100%;
+    height: auto;
+}
+
+main .informazioni {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .informazione-singola{
+    margin: 10px 0;
+}
+
+main .tipo-informazione{
+    color: var(--colore-testo-vetrine);
+    font-weight: 700;
+}
+
+main .informazione{
+    color: var(--colore-testo-vetrine);
+}
+
+main .pulsante-informazioni{
+    margin: 20px 0;
+}
+
+main .pulsante-informazioni a{
+    border: solid 1px white;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
