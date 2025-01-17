@@ -65,7 +65,6 @@ header .menu-toggle {
     cursor: pointer;
     position: relative;
     z-index: 20;
-    border: solid red 1px;
 }
 
 header .contenitore-icona-hamburger{
