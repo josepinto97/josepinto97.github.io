@@ -65,6 +65,7 @@ header .menu-toggle {
     cursor: pointer;
     position: relative;
     z-index: 20;
+    border: solid red 1px;
 }
 
 header .contenitore-icona-hamburger{
@@ -79,6 +80,7 @@ header .menu-toggle span {
     background-color: var(--colore-social);
     border-radius: 2px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .menu-toggle.active span:nth-child(1) {
@@ -141,7 +143,7 @@ header .chiusura-menu {
 
 header .sottomenu {
     /* background-color: var(--colore-primario); */
-    background-color:var(--colore-primario);
+    background-color:var(--colore-vetrina-macchina);
     position: absolute;
     /*     height: 100vh; */
     width: 100%;
