@@ -17,8 +17,16 @@ function apri_menu() {
                 sottomenu_aperto = true; */
         sottomenu.classList.add('aperto');
         sottomenu_aperto = true;
+    }else{
+        sottomenu.classList.remove('aperto');
+        sottomenu_aperto = false;
     }
 
+}
+
+function toggleMenu() {
+    const menuToggle = document.getElementById('menu_hamburger');
+    menuToggle.classList.toggle('active'); // Aggiunge o rimuove la classe "active"
 }
 
 function chiudi_menu() {
