@@ -11,7 +11,7 @@
     --colore-linee-menu: grey;
     --fontsize-voci-menu: 30px;
     --fontsize-social: 25px;
-    --colore-social: white;
+    --colore-social: rgb(255, 255, 255);
     --colore-icone-menu: white;
     --fontsize-icone-menu: 40px;
     --colore-vetrina-macchina: #171717;
@@ -45,7 +45,7 @@ p {
 
 html,
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -53,12 +53,19 @@ body {
 
 header {
     background-color: var(--colore-primario);
-    position: relative;
+    /* position: relative; */
 }
 
 header .contenitore-header {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    background-color: var(--colore-primario);
+}
+
+header .contenitore-menu{
+    background-color: var(--colore-primario);
 }
 
 header .logo {
@@ -75,6 +82,7 @@ header .logo img {
 header .menu {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 header .menu-hamburger {
@@ -95,17 +103,23 @@ header .chiusura-menu {
 }
 
 header .sottomenu {
-    background-color: var(--colore-primario);
+    /* background-color: var(--colore-primario); */
+    background-color:var(--colore-primario);
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    /*     height: 100vh; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    left: 100vw;
-    top: 0;
-    transition: 1s;
+    left: 0;
+/*     bottom: 0; */
+    transform: translateY(-50%);
+    transition: 1s ease-in-out;
     z-index: 2;
+}
+
+header .sottomenu.aperto {
+    transform: translateY(50%);
 }
 
 header .sottomenu-voci {
@@ -150,16 +164,27 @@ header .email,
 .telefono {
     display: flex;
     gap: 10px;
-    justify-content: space-between;
+}
+
+header .email {
+    margin-left: 20px;
+}
+
+header .contatti {
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    position: relative;
+    background-color: var(--colore-primario);
 }
 
 header .contatti a {
     display: flex;
     align-items: center;
+    color: var(--colore-social);
 }
 
 header .contatti i {
-    font-size: var(--fontsize-social);
     color: var(--colore-social);
 }
 
@@ -194,7 +219,7 @@ main .testo {
 
 /* vetrina macchina singola */
 
-main h3{
+main h3 {
     width: 100%;
     text-align: center;
     margin: 50px 0 30px 0;
@@ -208,7 +233,7 @@ main .vetrina-macchina {
     overflow: hidden;
 }
 
-main .modello-macchina{
+main .modello-macchina {
     width: 100%;
     text-align: center;
     color: var(--colore-testo-vetrine);
@@ -233,24 +258,24 @@ main .informazioni {
     justify-content: space-between;
 }
 
-main .informazione-singola{
+main .informazione-singola {
     margin: 10px 0;
 }
 
-main .tipo-informazione{
+main .tipo-informazione {
     color: var(--colore-testo-vetrine);
     font-weight: 700;
 }
 
-main .informazione{
+main .informazione {
     color: var(--colore-testo-vetrine);
 }
 
-main .pulsante-informazioni{
+main .pulsante-informazioni {
     margin: 20px 0;
 }
 
-main .pulsante-informazioni a{
+main .pulsante-informazioni a {
     border: solid 1px white;
     color: black;
     background-color: white;
