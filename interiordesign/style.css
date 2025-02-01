@@ -40,21 +40,20 @@ p {
     margin-bottom: unset;
 }
 
+h1 {
+    text-transform: uppercase;
+    margin-bottom: unset;
+}
+
 
 /*----- BODY -----*/
 
-html,
 body {
-    /* overflow-x: hidden; */
+    background-color: var(--colore-primario);
 }
 
 
 /*----- HEADER -----*/
-
-header {
-    background-color: var(--colore-primario);
-    /* position: relative; */
-}
 
 header .menu-toggle {
     display: flex;
@@ -67,7 +66,7 @@ header .menu-toggle {
     z-index: 20;
 }
 
-header .contenitore-icona-hamburger{
+header .contenitore-icona-hamburger {
     display: flex;
     align-items: center;
 }
@@ -87,7 +86,8 @@ header .menu-toggle span {
 }
 
 .menu-toggle.active span:nth-child(2) {
-    opacity: 0; /* Linea centrale scompare */
+    opacity: 0;
+    /* Linea centrale scompare */
 }
 
 .menu-toggle.active span:nth-child(3) {
@@ -102,7 +102,7 @@ header .contenitore-header {
     background-color: var(--colore-primario);
 }
 
-header .contenitore-menu{
+header .contenitore-menu {
     background-color: var(--colore-primario);
 }
 
@@ -142,7 +142,7 @@ header .chiusura-menu {
 
 header .sottomenu {
     /* background-color: var(--colore-primario); */
-    background-color:var(--colore-vetrina-macchina);
+    background-color: var(--colore-vetrina-macchina);
     position: absolute;
     /*     height: 100vh; */
     width: 100%;
@@ -150,7 +150,7 @@ header .sottomenu {
     flex-direction: column;
     align-items: center;
     left: 0;
-/*     bottom: 0; */
+    /*     bottom: 0; */
     transform: translateY(-50%);
     transition: 1s ease-in-out;
     z-index: 2;
@@ -161,6 +161,7 @@ header .sottomenu.aperto {
 }
 
 header .sottomenu-voci {
+    padding: 30px 10px;
     width: 100%;
 }
 
@@ -189,13 +190,15 @@ header .social {
     width: 100%;
     font-size: var(--fontsize-social);
     color: var(--colore-social);
+    display: flex;
+    justify-content: space-evenly;
 }
 
 header .social-contatti {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    text-align: right;
+    margin-bottom: 30px;
+
 }
 
 header .email,
@@ -231,7 +234,7 @@ header .contatti i {
 
 main {
     background-color: var(--colore-primario);
-    padding: 50px 0;
+    margin: 70px 0;
 }
 
 main .immagine-home img {
@@ -269,6 +272,7 @@ main .vetrina-macchina {
     border-radius: 10px;
     background-color: var(--colore-vetrina-macchina);
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 main .modello-macchina {
@@ -319,4 +323,46 @@ main .pulsante-informazioni a {
     background-color: white;
     padding: 5px 10px;
     border-radius: 10px;
+}
+
+
+/*----- FOOTER -----*/
+
+footer {
+    background-color: var(--colore-primario);
+    color: var(--colore-testo-vetrine);
+}
+
+footer h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+footer .contenirore-form-footer input,
+footer .contenirore-form-footer textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+footer .contenirore-form-footer input:hover,
+footer .contenirore-form-footer textarea:hover {
+    border: solid 1px red;
+}
+
+footer .contenirore-form-footer input:focus,
+footer .contenirore-form-footer textarea:focus {
+    box-shadow: 0 0 5px 1px red;
+}
+
+footer .logo-footer img {
+    width: auto;
+    height: 100%;
+}
+
+footer .logo-footer {
+    height: 150px;
+    text-align: center;
 }
