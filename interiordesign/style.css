@@ -265,16 +265,19 @@ main .testo {
 main h3 {
     width: 100%;
     text-align: center;
-    margin: 50px 0 30px 0;
+    margin: 100px 0 80px 0;
     color: var(--colore-elenco-macchine);
 }
 
-main .vetrina-macchina {
-    border: solid 2px white;
-    border-radius: 10px;
+main .informazioni-generali {
     background-color: var(--colore-vetrina-macchina);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+main .vetrina-macchina {
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 main .modello-macchina {
@@ -295,6 +298,7 @@ main .vetrina-macchina {
 main .vetrina-macchina img {
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 main .informazioni {
@@ -329,19 +333,42 @@ main .pulsante-informazioni a {
 
 /*----- PAGINA MICCHINA SINGOLA -----*/
 
-main .macchina-singola img{
+main .macchina-singola img {
     width: 100%;
     height: auto;
 }
 
-main .immagine-macchina{
+main .macchina-singola .immagine-macchina {
     border-radius: 20px;
     overflow: hidden;
 }
 
-main .descrizione-macchina{
+main .descrizione-macchina {
     display: flex;
     justify-content: space-between;
+}
+
+main .descrizione-singola {
+    margin: 20px 0;
+}
+
+main .macchina-singola h1{
+    margin-bottom: 30px;
+}
+
+main .informazioni-optiona h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .informazioni-optiona p{
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+main .informazioni-optiona i{
+    font-size: 10px;
+    margin-right: 20px;
 }
 
 
@@ -385,6 +412,11 @@ footer form .bottone {
 
 /* informazioni footer */
 
+footer h2{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
 footer .informazioni-footer {
     border-top: solid 1px var(--colore-linee-menu);
     padding-top: 35px;
@@ -409,7 +441,7 @@ footer .informazioni-azienda {
     border-bottom: solid 1px var(--colore-linee-menu);
 }
 
-footer .informazioni-azienda p{
+footer .informazioni-azienda p {
 
     margin-bottom: 15px;
 }
