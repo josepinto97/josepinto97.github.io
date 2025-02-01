@@ -51,7 +51,7 @@ h1 {
 body {
     background-color: var(--colore-primario);
     font-family: "Montserrat", serif;
-    ;
+    color: white;
 }
 
 
@@ -325,6 +325,23 @@ main .pulsante-informazioni a {
     background-color: white;
     padding: 5px 10px;
     border-radius: 10px;
+}
+
+/*----- PAGINA MICCHINA SINGOLA -----*/
+
+main .macchina-singola img{
+    width: 100%;
+    height: auto;
+}
+
+main .immagine-macchina{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+main .descrizione-macchina{
+    display: flex;
+    justify-content: space-between;
 }
 
 
