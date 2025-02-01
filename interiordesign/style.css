@@ -357,6 +357,11 @@ footer .contenirore-form-footer textarea:focus {
     box-shadow: 0 0 5px 1px red;
 }
 
+footer .informazioni-footer{
+    border-top: solid 1px var(--colore-linee-menu);
+    padding-top: 35px;
+}
+
 footer .logo-footer img {
     width: auto;
     height: 100%;
@@ -365,4 +370,20 @@ footer .logo-footer img {
 footer .logo-footer {
     height: 150px;
     text-align: center;
+}   
+
+footer .informazioni-azienda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    border-bottom: solid 1px var(--colore-linee-menu);  
+    padding-bottom: 40px;
+}
+
+footer .social-footer{
+    font-size: var(--fontsize-social);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0;
 }
