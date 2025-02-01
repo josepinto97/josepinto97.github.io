@@ -50,7 +50,8 @@ h1 {
 
 body {
     background-color: var(--colore-primario);
-    font-family: "Montserrat", serif;;
+    font-family: "Montserrat", serif;
+    ;
 }
 
 
@@ -360,14 +361,14 @@ footer .contenirore-form-footer textarea:focus {
     box-shadow: 0 0 10px 2px red;
 }
 
-footer form .bottone{
+footer form .bottone {
     background-color: white;
     color: black;
 }
 
 /* informazioni footer */
 
-footer .informazioni-footer{
+footer .informazioni-footer {
     border-top: solid 1px var(--colore-linee-menu);
     padding-top: 35px;
 }
@@ -380,22 +381,23 @@ footer .logo-footer img {
 footer .logo-footer {
     height: 150px;
     text-align: center;
-}   
-
-footer .nome-azienda{
-    margin-bottom: 15px;
 }
 
-footer .informazioni-azienda{
+footer .informazioni-azienda {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    border-bottom: solid 1px var(--colore-linee-menu);  
-    padding-bottom: 40px;
+    padding-bottom: 25px;
+    border-bottom: solid 1px var(--colore-linee-menu);
 }
 
-footer .social-footer{
+footer .informazioni-azienda p{
+
+    margin-bottom: 15px;
+}
+
+footer .social-footer {
     font-size: var(--fontsize-social);
     display: flex;
     justify-content: space-evenly;
