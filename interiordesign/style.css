@@ -50,6 +50,7 @@ h1 {
 
 body {
     background-color: var(--colore-primario);
+    font-family: "Montserrat", serif;;
 }
 
 
@@ -371,6 +372,10 @@ footer .logo-footer {
     height: 150px;
     text-align: center;
 }   
+
+footer .nome-azienda{
+    margin-bottom: 15px;
+}
 
 footer .informazioni-azienda{
     display: flex;
