@@ -360,6 +360,11 @@ footer .contenirore-form-footer textarea:focus {
     box-shadow: 0 0 10px 2px red;
 }
 
+footer form .bottone{
+    background-color: white;
+    color: black;
+}
+
 /* informazioni footer */
 
 footer .informazioni-footer{
