@@ -231,6 +231,8 @@ header .contatti i {
     color: var(--colore-social);
 }
 
+/* TODO menu fixed */
+
 header {
     position: fixed;
     top: 0;
@@ -239,7 +241,7 @@ header {
 }
 
 body {
-    padding-top: 80px; /* Adjust this value based on the height of your header */
+    padding-top: 80px; 
 }
 
 
@@ -417,7 +419,7 @@ main .macchina-singola .galleria img{
     display: none; 
     position: fixed; 
     z-index: 1; 
-    padding-top: 100px; 
+    padding-top: 50%; 
     left: 0;
     top: 0;
     width: 100%; 
@@ -446,7 +448,7 @@ main .macchina-singola .galleria img{
 
 .close {
     position: absolute;
-    top: 15px;
+    top: 100px;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;

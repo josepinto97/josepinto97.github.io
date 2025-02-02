@@ -66,8 +66,10 @@ images.forEach(function(img) {
 var span = document.getElementsByClassName("close")[0];
 
 // Quando l'utente clicca su <span> (x), chiudi il modal
-span.onclick = function() { 
-    modal.style.display = "none";
+if (span) {
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
 }
 
 /*----- BLOCCO MENU NELLA PARTE SUPERIORE  E CHIUSURA QUANDO CLICCO FUORI -----*/
@@ -77,7 +79,7 @@ document.addEventListener('click', function(event) {
     const icona_hamburger = document.getElementById('menu_hamburger');
 
     if (sottomenu_aperto && !sottomenu.contains(event.target) && !icona_hamburger.contains(event.target)) {
-        chiudi_menu();
+        chiudi_menu();  
         icona_hamburger.classList.remove('active'); // Rimuove la classe "active" dall'icona hamburger
     }
 });
