@@ -45,3 +45,27 @@ function chiudi_menu() {
     }
 
 }
+
+
+
+// Ottieni il modal
+var modal = document.getElementById("myModal");
+
+// Ottieni l'immagine e l'elemento modal
+var images = document.querySelectorAll("main .macchina-singola .galleria img");
+var modalImg = document.getElementById("img01");
+
+images.forEach(function(img) {
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    }
+});
+
+// Ottieni l'elemento <span> che chiude il modal
+var span = document.getElementsByClassName("close")[0];
+
+// Quando l'utente clicca su <span> (x), chiudi il modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
