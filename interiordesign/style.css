@@ -231,6 +231,17 @@ header .contatti i {
     color: var(--colore-social);
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px; /* Adjust this value based on the height of your header */
+}
+
 
 /*----- MAIN -----*/
 

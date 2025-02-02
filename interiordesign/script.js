@@ -69,3 +69,15 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
     modal.style.display = "none";
 }
+
+/*----- BLOCCO MENU NELLA PARTE SUPERIORE  E CHIUSURA QUANDO CLICCO FUORI -----*/
+
+document.addEventListener('click', function(event) {
+    const sottomenu = document.getElementById('menu_sottomenu');
+    const icona_hamburger = document.getElementById('menu_hamburger');
+
+    if (sottomenu_aperto && !sottomenu.contains(event.target) && !icona_hamburger.contains(event.target)) {
+        chiudi_menu();
+        icona_hamburger.classList.remove('active'); // Rimuove la classe "active" dall'icona hamburger
+    }
+});
