@@ -395,6 +395,7 @@ main .macchina-singola .galleria{
 
 main .macchina-singola .galleria img{
     width: 45%;
+    max-width: 45%;
     margin-bottom: 30px;
     border-radius: 20px;
 }
