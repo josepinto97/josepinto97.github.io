@@ -331,7 +331,7 @@ main .pulsante-informazioni a {
     border-radius: 10px;
 }
 
-/*----- PAGINA MICCHINA SINGOLA -----*/
+/*----- PAGINA MACCHINA SINGOLA -----*/
 
 main .macchina-singola img {
     width: 100%;
@@ -359,6 +359,7 @@ main .macchina-singola h1{
 main .informazioni-optiona h2{
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 main .informazioni-optiona p{
@@ -371,6 +372,32 @@ main .informazioni-optiona i{
     margin-right: 20px;
 }
 
+main .macchina-singola .pulsante{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+main .macchina-singola .pulsante a{
+    color: black;
+    font-weight: 700;
+}
+
+main .macchina-singola .galleria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .macchina-singola .galleria img{
+    width: 45%;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
 
 /*----- FOOTER -----*/
 
