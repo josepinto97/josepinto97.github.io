@@ -64,7 +64,7 @@ header .menu-toggle {
     width: 30px;
     height: 24px;
     cursor: pointer;
-/*     position: relative; */
+    /*     position: relative; */
     z-index: 20;
 }
 
@@ -101,10 +101,10 @@ header .contenitore-header {
     justify-content: space-between;
     position: relative;
     z-index: 3;
-/*     background-color: var(--colore-primario); */
+    /*     background-color: var(--colore-primario); */
 }
 
-.linear-gradient{
+.linear-gradient {
     background: linear-gradient(to bottom, var(--colore-primario), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
 
@@ -120,7 +120,7 @@ header .logo {
     overflow: hidden;
 }
 
-header .sottomenu-voci .icona-sfumata{
+header .sottomenu-voci .icona-sfumata {
     position: absolute;
     font-size: 60px;
     bottom: 50%;
@@ -137,7 +137,7 @@ header .logo img {
 header .menu {
     display: flex;
     align-items: center;
-/*     position: relative; */
+    /*     position: relative; */
 }
 
 header .menu-hamburger {
@@ -169,7 +169,7 @@ header .sottomenu {
     left: 100%;
     top: 0;
     /*     bottom: 0; */
-/*     transform: translateY(-50%); */
+    /*     transform: translateY(-50%); */
     transition: 0.5s ease-in-out;
     z-index: 2;
     padding-top: 22px;
@@ -194,7 +194,7 @@ header .sottomenu-voci li {
     padding-left: 40px;
 }
 
-header .sottomenu-voci .numero{
+header .sottomenu-voci .numero {
     font-size: 30px;
 }
 
@@ -255,7 +255,7 @@ header {
 }
 
 body {
-    padding-top: 80px; 
+    padding-top: 80px;
 }
 
 .aperto {
@@ -362,7 +362,7 @@ main .pulsante-informazioni a {
     border-radius: 10px;
 }
 
-main .vetrina-macchine h1{
+main .vetrina-macchine h1 {
     margin-bottom: 50px;
 }
 
@@ -387,27 +387,27 @@ main .descrizione-singola {
     margin: 20px 0;
 }
 
-main .macchina-singola h1{
+main .macchina-singola h1 {
     margin-bottom: 30px;
 }
 
-main .informazioni-optiona h2{
+main .informazioni-optiona h2 {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 40px;
 }
 
-main .informazioni-optiona p{
+main .informazioni-optiona p {
     list-style-type: disc;
     margin-bottom: 5px;
 }
 
-main .informazioni-optiona i{
+main .informazioni-optiona i {
     font-size: 10px;
     margin-right: 20px;
 }
 
-main .macchina-singola .pulsante{
+main .macchina-singola .pulsante {
     width: 100%;
     text-align: center;
     margin: 20px 0;
@@ -417,29 +417,29 @@ main .macchina-singola .pulsante{
     text-transform: uppercase;
 }
 
-main .macchina-singola .pulsante a{
+main .macchina-singola .pulsante a {
     color: black;
     font-weight: 700;
 }
 
-main .macchina-singola .galleria{
+main .macchina-singola .galleria {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-main .macchina-singola .galleria img{
+main .macchina-singola .galleria img {
     width: 45%;
     max-width: 45%;
     margin-bottom: 30px;
     border-radius: 20px;
 }
 
-main .macchina-singola .immagine-macchina{
+main .immagine-macchina {
     position: relative;
 }
 
-main .macchina-singola .venduta{
+main .venduta {
     position: absolute;
     top: 50%;
     transform: translatey(-50%);
@@ -453,17 +453,17 @@ main .macchina-singola .venduta{
 /* modal */
 
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 50%; 
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50%;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.9); 
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -479,8 +479,13 @@ main .macchina-singola .venduta{
 }
 
 @keyframes zoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 .close {
@@ -498,6 +503,51 @@ main .macchina-singola .venduta{
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+/*----- SEZIONE CONTATTI -----*/
+
+main .contatti-benvenuto h1 {
+    font-size: var(--fontsize-social);
+    margin-bottom: 50px;
+}
+
+main .contatti-benvenuto {
+    margin-bottom: 80px;
+}
+
+main .contatti-orari,
+.contatti-contatti {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+main .contatti-orari h4 {
+    margin-bottom: 30px;
+}
+
+main .contatti-orari p,
+.contatti-contatti a {
+    margin-bottom: 10px;
+}
+
+main .contatti-contatti h4 {
+    margin-bottom: 30px;
+}
+
+main .contatti-contatti .contatti {
+    display: flex;
+    flex-direction: column;
+}
+
+.rettangolo-inclinato {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -541,7 +591,7 @@ footer form .bottone {
 
 /* informazioni footer */
 
-footer h2{
+footer h2 {
     text-align: center;
     margin-bottom: 35px;
 }

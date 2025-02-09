@@ -34,7 +34,7 @@
                 </div>
                 <div class="contenitore-icona-hamburger">
                     <!-- <i onclick="apri_menu()" id="menu_hamburger" class="menu-hamburger bi bi-list"></i> -->
-<!--                     <div class="menu-toggle" id="menu_hamburger" onclick="toggleMenu(), apri_menu()"> -->
+                    <!--                     <div class="menu-toggle" id="menu_hamburger" onclick="toggleMenu(), apri_menu()"> -->
                     <div class="menu-toggle" id="menu_hamburger" onclick="apri_menu(), toggleMenu()">
                         <span></span>
                         <span></span>
@@ -63,95 +63,39 @@
     </header>
 
 
-
     <main>
         <div class="contenitore-main container">
-            <div class="macchina-singola">
-                <h1>Nome macchina</h1>
-                <div class="immagine-macchina">
-                    <span class="venduta">venduta</span>
-                    <img src="img/WW01.jpg" alt="">
-                </div>
-                <div class="descrizione-macchina">
-                    <div class="descrizione-1">
-                        <div class="descrizione-singola">
-                            <p><i class="bi bi-calendar"></i> Immatricolazione</p>
-                            <p>12/2025</p>
-                        </div>
-                        <div class="descrizione-singola">
-                            <p><i class="bi bi-speedometer"></i> Prestazione</p>
-                            <p>250kw / 180Cv</p>
-                        </div>
-                        <div class="descrizione-singola">
-                            <p><i class="bi bi-fuel-pump"></i> Carburante</p>
-                            <p>Benzina</p>
-                        </div>
-                    </div>
-                    <div class="descrizione-2">
-                        <div class="descrizione-singola">
-                            <p><i class="bi bi-signpost"></i> Chilometraggio</p>
-                            <p>1000 Km</p>
-                        </div>
-                        <div class="descrizione-singola">
-                            <p><i class="bi bi-gear"></i> Trasmissione</p>
-                            <p>Manuale</p>
-                        </div>
-                        <div class="descrizione-singola">
-                            <p><i class="bi bi-cash"></i> Prezzo</p>
-                            <p>$ 20.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pulsante">
-                    <a href="#form">Contattaci</a>
-                </div>
-                <div class="informazioni-optiona">
-                    <div>
-                        <h2>Informazioni</h2>
-                        <div>
-                            <p><i class="bi bi-circle-fill"></i> motore</p>
-                            <p><i class="bi bi-circle-fill"></i> cavalli</p>
-                            <p><i class="bi bi-circle-fill"></i> chilometro</p>
-                            <p><i class="bi bi-circle-fill"></i> immatricolazione</p>
-                            <p><i class="bi bi-circle-fill"></i> non incidentata</p>
-                            <p><i class="bi bi-circle-fill"></i> trasmissione</p>
-                            <p><i class="bi bi-circle-fill"></i> verniciatura</p>
-                            <p><i class="bi bi-circle-fill"></i> pneumatici</p>
-                            <p><i class="bi bi-circle-fill"></i> cerchioni</p>
-                        </div>
-                    </div>
-                    <div>
-                        <h2>Optional</h2>
-                        <div>
-                            <p><i class="bi bi-circle-fill"></i> telecamera</p>
-                            <p><i class="bi bi-circle-fill"></i> illuminazione</p>
-                            <p><i class="bi bi-circle-fill"></i> stereo</p>
-                            <p><i class="bi bi-circle-fill"></i> specchietti elettrici</p>
-                            <p><i class="bi bi-circle-fill"></i> fari</p>
-                            <p><i class="bi bi-circle-fill"></i> sensori</p>
-                            <p><i class="bi bi-circle-fill"></i> stop&go</p>
-                            <p><i class="bi bi-circle-fill"></i> sedili riscaldati</p>
-                            <p><i class="bi bi-circle-fill"></i> tetto panoramico</p>
-                        </div>
-                    </div>
-                    <div>
-                        <h2>Galleria</h2>
-                        <div class="galleria">
-                            <img src="img/WW01.jpg" alt="">
-                            <img src="img/WW01.jpg" alt="">
-                            <img src="img/WW01.jpg" alt="">
-                            <img src="img/WW01.jpg" alt="">
-                            <img src="img/WW01.jpg" alt="">
-                            <img src="img/WW01.jpg" alt="">
-                            <img src="img/WW01.jpg" alt="">
-                        </div>
-                        <div id="myModal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="img01">
-                        </div>
-                    </div>
+            <div class="contatti-benvenuto">
+                <h1>Contattaci per maggiori informazioni sulle nostre auto e servizi</h1>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laboriosam doloribus corrupti molestias tenetur</p>
                 </div>
             </div>
+            <div class="contatti-orari">
+                <h4>Orari</h4>
+                <div class="orari">
+                    <p>Lunedì - Venerdì: 9:00 - 12:00 / 15:00 - 19:00</p>
+                    <p>Sabato: 9:00 - 13:00</p>
+                    <p>Domenica: Chiuso</p>
+                </div>
+            </div>
+            <div class="contatti-contatti">
+                <h4>Contatti</h4>
+                <div class="contatti">
+                    <a href="mailto:esempio@gmail.com">esempio@gmail.com</a>
+                    <a href="tel:1111111111">Nome: +39 1111111111</a>
+            </div>
+            <div class="rettangolo-inclinato">
+                <svg width="300" height="200" viewBox="0 0 300 200">
+                    <defs>
+                        <clipPath id="clip-rettangolo-inclinato">
+                            <polygon points="60,0 300,0 240,200 0,200" />
+                        </clipPath>
+                    </defs>
+                    <image xlink:href="img/autobmw.jpg" width="300" height="200" clip-path="url(#clip-rettangolo-inclinato)" />
+                </svg>
+            </div>
+        </div>
     </main>
 
 
@@ -159,7 +103,7 @@
         <div class="container contenitore-footer">
 
             <!-- form -->
-            <div class="contenirore-form-footer" id="form">
+            <div class="contenirore-form-footer">
                 <h3>Contattaci</h3>
                 <form action="" method="POST">
                     <input type="text" name="nome" id="nome" placeholder="Nome e Cognome" required>
