@@ -28,13 +28,14 @@
             </div>
         </div>
         <div class="contenitore-menu container">
-            <div class="contenitore-header ">
+            <div class="contenitore-header linear-gradient" id="contenitore_header">
                 <div class="logo">
                     <a href="index.html"><img src="img/logo.jpg" alt="logo sito"></a>
                 </div>
                 <div class="contenitore-icona-hamburger">
                     <!-- <i onclick="apri_menu()" id="menu_hamburger" class="menu-hamburger bi bi-list"></i> -->
-                    <div class="menu-toggle" id="menu_hamburger" onclick="toggleMenu(), apri_menu()">
+<!--                     <div class="menu-toggle" id="menu_hamburger" onclick="toggleMenu(), apri_menu()"> -->
+                    <div class="menu-toggle" id="menu_hamburger" onclick="apri_menu(), toggleMenu()">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -45,8 +46,9 @@
                 <nav class="sottomenu" id="menu_sottomenu">
                     <!-- <i onclick="chiudi_menu()" class="container bi bi-x chiusura-menu"></i> -->
                     <ul class="sottomenu-voci container">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Contatti</a></li>
+                        <li><i class="bi bi-shop icona-sfumata"> .</i><a href="index.html">Home</a></li>
+                        <li><i class="bi bi-car-front icona-sfumata"> .</i><a href="vendute.html">Auto vendute</a></li>
+                        <li><i class="bi bi-person-lines-fill icona-sfumata"> .</i><a href="#">Contatti</a></li>
                     </ul>
                     <div class="social-contatti container">
                         <div class="social">
@@ -61,11 +63,13 @@
     </header>
 
 
+
     <main>
         <div class="contenitore-main container">
             <div class="macchina-singola">
                 <h1>Nome macchina</h1>
                 <div class="immagine-macchina">
+                    <span class="venduta">venduta</span>
                     <img src="img/WW01.jpg" alt="">
                 </div>
                 <div class="descrizione-macchina">

@@ -34,7 +34,7 @@
                 </div>
                 <div class="contenitore-icona-hamburger">
                     <!-- <i onclick="apri_menu()" id="menu_hamburger" class="menu-hamburger bi bi-list"></i> -->
-<!--                     <div class="menu-toggle" id="menu_hamburger" onclick="toggleMenu(), apri_menu()"> -->
+                    <!--                     <div class="menu-toggle" id="menu_hamburger" onclick="toggleMenu(), apri_menu()"> -->
                     <div class="menu-toggle" id="menu_hamburger" onclick="apri_menu(), toggleMenu()">
                         <span></span>
                         <span></span>
@@ -46,7 +46,7 @@
                 <nav class="sottomenu" id="menu_sottomenu">
                     <!-- <i onclick="chiudi_menu()" class="container bi bi-x chiusura-menu"></i> -->
                     <ul class="sottomenu-voci container">
-                        <li><i class="bi bi-shop icona-sfumata"> .</i><a href="#">Home</a></li>
+                        <li><i class="bi bi-shop icona-sfumata"> .</i><a href="index.html">Home</a></li>
                         <li><i class="bi bi-car-front icona-sfumata"> .</i><a href="vendute.html">Auto vendute</a></li>
                         <li><i class="bi bi-person-lines-fill icona-sfumata"> .</i><a href="#">Contatti</a></li>
                     </ul>
@@ -63,26 +63,13 @@
     </header>
 
 
+
     <main>
         <div class="contenitore-main container">
 
-            <!-- TITOLO E DESCRIZIONE DI BENVENUTO -->
-            <div class="immagine-titolo-descrizione">
-                <div class="immagine-titolo">
-                    <div class="immagine-home">
-                        <img src="img/immagine-home.webp" alt="">
-                    </div>
-                    <h1 class="titolo">Titolo di benvenuto</h1>
-                </div>
-                <p class="testo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam laboriosam, rerum cumque
-                    magnam
-                    voluptates perferendis ratione nulla.</p>
-            </div>
-
-
             <!-- VETRINA MACCHINE -->
             <div class="vetrina-macchine">
-                <h3>Lista macchine in vendita</h3>
+                <h1>Lista auto vendute</h1>
                 <div class="macchine-vendita">
                     <div class="vetrina-macchina">
                         <div class="immagine-macchina">
@@ -259,7 +246,7 @@
         <div class="container contenitore-footer">
 
             <!-- form -->
-            <div class="contenirore-form-footer">
+            <div class="contenirore-form-footer" id="form">
                 <h3>Contattaci</h3>
                 <form action="" method="POST">
                     <input type="text" name="nome" id="nome" placeholder="Nome e Cognome" required>
