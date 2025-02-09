@@ -120,6 +120,15 @@ header .logo {
     overflow: hidden;
 }
 
+header .sottomenu-voci .icona-sfumata{
+    position: absolute;
+    font-size: 60px;
+    bottom: 50%;
+    transform: translatey(50%);
+    left: 0;
+    opacity: 0.2;
+}
+
 header .logo img {
     width: auto;
     height: 100%;
@@ -178,9 +187,11 @@ header .sottomenu-voci {
 header .sottomenu-voci li {
     font-size: var(--fontsize-voci-menu);
     width: 100%;
-    text-align: center;
-    padding: 10px 0;
+    text-align: left;
+    padding: 40px 0;
     display: flex;
+    position: relative;
+    padding-left: 40px;
 }
 
 header .sottomenu-voci .numero{
@@ -527,7 +538,7 @@ footer .logo-footer img {
 }
 
 footer .logo-footer {
-    height: 150px;
+    height: 100px;
     text-align: center;
 }
 
