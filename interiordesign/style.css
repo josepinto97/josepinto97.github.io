@@ -64,7 +64,7 @@ header .menu-toggle {
     width: 30px;
     height: 24px;
     cursor: pointer;
-    position: relative;
+/*     position: relative; */
     z-index: 20;
 }
 
@@ -122,7 +122,7 @@ header .logo img {
 header .menu {
     display: flex;
     align-items: center;
-    position: relative;
+/*     position: relative; */
 }
 
 header .menu-hamburger {
@@ -146,20 +146,19 @@ header .sottomenu {
     /* background-color: var(--colore-primario); */
     background-color: var(--colore-vetrina-macchina);
     position: absolute;
-    /*     height: 100vh; */
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    left: 0;
+    left: 100%;
+    top: 0;
     /*     bottom: 0; */
-    transform: translateY(-50%);
+/*     transform: translateY(-50%); */
     transition: 1s ease-in-out;
-    z-index: 2;
-}
-
-header .sottomenu.aperto {
-    transform: translateY(50%);
+    z-index: 3;
+    opacity: 0.9;
+    padding-top: 22px;
 }
 
 header .sottomenu-voci {
@@ -174,18 +173,9 @@ header .sottomenu-voci li {
     padding: 10px 0;
 }
 
-header .sottomenu-voci> :first-child {
-    border-top: solid 1px var(--colore-linee-menu);
-    border-bottom: solid 1px var(--colore-linee-menu);
-}
-
 header .sottomenu-voci a {
     width: 100%;
     display: block;
-}
-
-header .sottomenu-voci> :last-child {
-    border-bottom: solid 1px var(--colore-linee-menu);
 }
 
 header .social {
@@ -231,7 +221,6 @@ header .contatti i {
     color: var(--colore-social);
 }
 
-/* TODO menu fixed */
 
 header {
     position: fixed;
@@ -242,6 +231,10 @@ header {
 
 body {
     padding-top: 80px; 
+}
+
+.aperto {
+    transform: translateX(-100%);
 }
 
 
