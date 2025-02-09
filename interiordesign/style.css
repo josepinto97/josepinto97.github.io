@@ -201,6 +201,7 @@ header .sottomenu-voci .numero {
 header .sottomenu-voci a {
     width: 100%;
     display: block;
+    z-index: 4;
 }
 
 header .social {
