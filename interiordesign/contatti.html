@@ -18,7 +18,7 @@
 
 <body>
 
-    <header id="header">
+        <header id="header">
         <div class="contatti container">
             <div class="telefono">
                 <i class="bi bi-telephone"></i><a href="tel:+391111111111">1111111111</a>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="contenitore-icona-hamburger">
                     <!-- <i onclick="apri_menu()" id="menu_hamburger" class="menu-hamburger bi bi-list"></i> -->
-                    <!--                     <div class="menu-toggle" id="menu_hamburger" onclick="toggleMenu(), apri_menu()"> -->
+<!--                     <div class="menu-toggle" id="menu_hamburger" onclick="toggleMenu(), apri_menu()"> -->
                     <div class="menu-toggle" id="menu_hamburger" onclick="apri_menu(), toggleMenu()">
                         <span></span>
                         <span></span>
@@ -47,7 +47,7 @@
                     <!-- <i onclick="chiudi_menu()" class="container bi bi-x chiusura-menu"></i> -->
                     <ul class="sottomenu-voci container">
                         <li><i class="bi bi-shop icona-sfumata"> .</i><a href="index.html">Home</a></li>
-                        <li><i class="bi bi-car-front icona-sfumata"> .</i><a href="vendute.html">Auto vendute</a></li>
+                        <li class="menu-auto" onclick="menu_auto()"><i class="bi bi-car-front icona-sfumata"> .</i><a>Auto <i class="freccia-sottomenu bi bi-chevron-down"></i></a></li>
                         <li><i class="bi bi-person-lines-fill icona-sfumata"> .</i><a href="contatti.html">Contatti</a></li>
                     </ul>
                     <div class="social-contatti container">
@@ -56,6 +56,17 @@
                             <a href="mailto:esempio@gramil.com"><i class="bi bi-envelope"></i></a>
                             <a href="tel:+391111111111"><i class="bi bi-telephone"></i></a>
                         </div>
+                    </div>
+                    <div class="menu-comparsa" id="menu_comparsa">
+                        <ul>
+                            <li onclick="menu_auto()"><span>Indietro <i class="freccia-sottomenu bi bi-chevron-down"></i></span>
+                            <ul>
+                                <li><a href="index.html.#macchine_vendita" onclick="apri_menu(), toggleMenu()">Auto in venita</a></li>
+                                <li><a href="vendute.html">Auto vendute</a></li>
+                            </ul>
+                        </li>
+
+                        </ul>
                     </div>
                 </nav>
             </div>

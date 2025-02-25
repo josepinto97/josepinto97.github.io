@@ -11,6 +11,7 @@ function apri_menu() {
     let sottomenu = document.getElementById('menu_sottomenu');
     let header = document.getElementById('header');
     let contenitore_header = document.getElementById('contenitore_header');
+    let menu_comparsa = document.getElementById('menu_comparsa');
 
     if (!sottomenu_aperto) {
         sottomenu.classList.add('aperto');
@@ -20,6 +21,7 @@ function apri_menu() {
         sottomenu.classList.remove('aperto');
         sottomenu_aperto = false;
         document.body.style.overflow = 'auto';
+        menu_comparsa.style.left = '100%'; // Riporta menu_comparsa a left 100%
     }
 
 }
@@ -83,3 +85,15 @@ document.addEventListener('click', function (event) {
         icona_hamburger.classList.remove('active'); // Rimuove la classe "active" dall'icona hamburger
     }
 });
+
+
+function menu_auto() {
+    const menu = document.getElementById('menu_comparsa');
+    menu.style.transition = 'left 0.5s ease'; // Aggiunge una transizione per l'animazione
+    if (menu.style.left === '0px') {
+        menu.style.left = '100%';
+    } else {
+        menu.style.left = '0';
+    }
+    console.log('ciao');
+}

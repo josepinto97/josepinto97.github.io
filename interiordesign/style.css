@@ -1,634 +1,671 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
 
 /*----- VARIABILI -----*/
 
 :root {
-    --colore-primario: black;
-    --colore-linee-menu: grey;
-    --fontsize-voci-menu: 30px;
-    --fontsize-social: 25px;
-    --colore-social: rgb(255, 255, 255);
-    --colore-icone-menu: white;
-    --fontsize-icone-menu: 40px;
-    --colore-vetrina-macchina: #171717;
-    --colore-testo-vetrine: white;
-    --colore-elenco-macchine: white;
+  --colore-primario: black;
+  --colore-linee-menu: grey;
+  --fontsize-voci-menu: 30px;
+  --fontsize-social: 25px;
+  --colore-social: rgb(255, 255, 255);
+  --colore-icone-menu: white;
+  --fontsize-icone-menu: 40px;
+  --colore-vetrina-macchina: #171717;
+  --colore-testo-vetrine: white;
+  --colore-elenco-macchine: white;
 }
-
 
 /*----- GENERALI -----*/
 
 ul {
-    padding-left: unset;
-    margin-bottom: unset;
+  padding-left: unset;
+  margin-bottom: unset;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 p {
-    margin-bottom: unset;
+  margin-bottom: unset;
 }
 
 h1 {
-    text-transform: uppercase;
-    margin-bottom: unset;
+  text-transform: uppercase;
+  margin-bottom: unset;
 }
-
 
 /*----- BODY -----*/
 
 body {
-    background-color: var(--colore-primario);
-    font-family: "Montserrat", serif;
-    color: white;
+  background-color: var(--colore-primario);
+  font-family: "Montserrat", serif;
+  color: white;
 }
-
 
 /*----- HEADER -----*/
 
 header .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 24px;
-    cursor: pointer;
-    /*     position: relative; */
-    z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  /*     position: relative; */
+  z-index: 20;
 }
 
 header .contenitore-icona-hamburger {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header .menu-toggle span {
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--colore-social);
-    border-radius: 2px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--colore-social);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-    /* Linea centrale scompare */
+  opacity: 0;
+  /* Linea centrale scompare */
 }
 
 .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 header .contenitore-header {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 3;
-    /*     background-color: var(--colore-primario); */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  background-color: var(--colore-primario);
 }
 
 .linear-gradient {
-    background: linear-gradient(to bottom, var(--colore-primario), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  background: linear-gradient(
+    to bottom,
+    var(--colore-primario),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 header .contenitore-menu {
-    /* background-color: var(--colore-primario); */
+  /* background-color: var(--colore-primario); */
 }
 
 header .logo {
-    min-height: 60px;
-    min-width: 10px;
-    height: 60px;
-    border-radius: 20px;
-    overflow: hidden;
+  min-height: 60px;
+  min-width: 10px;
+  height: 60px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 header .sottomenu-voci .icona-sfumata {
-    position: absolute;
-    font-size: 60px;
-    bottom: 50%;
-    transform: translatey(50%);
-    left: 0;
-    opacity: 0.2;
+  position: absolute;
+  font-size: 60px;
+  bottom: 50%;
+  transform: translatey(50%);
+  left: 0;
+  opacity: 0.2;
 }
 
 header .logo img {
-    width: auto;
-    height: 100%;
+  width: auto;
+  height: 100%;
 }
 
 header .menu {
-    display: flex;
-    align-items: center;
-    /*     position: relative; */
+  display: flex;
+  align-items: center;
+  /*     position: relative; */
 }
 
 header .menu-hamburger {
-    color: var(--colore-icone-menu);
-    font-size: var(--fontsize-icone-menu);
-    margin: auto;
+  color: var(--colore-icone-menu);
+  font-size: var(--fontsize-icone-menu);
+  margin: auto;
 }
 
 header .menu-hamburger i {
-    margin: auto;
+  margin: auto;
 }
 
 header .chiusura-menu {
-    color: var(--colore-icone-menu);
-    font-size: var(--fontsize-icone-menu);
-    width: 100%;
-    text-align: end;
+  color: var(--colore-icone-menu);
+  font-size: var(--fontsize-icone-menu);
+  width: 100%;
+  text-align: end;
 }
 
 header .sottomenu {
-    /* background-color: var(--colore-primario); */
-    background-color: var(--colore-primario);
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    left: 100%;
-    top: 0;
-    /*     bottom: 0; */
-    /*     transform: translateY(-50%); */
-    transition: 0.5s ease-in-out;
-    z-index: 2;
-    padding-top: 22px;
+  /* background-color: var(--colore-primario); */
+  background-color: var(--colore-primario);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 100%;
+  top: 0;
+  /*     bottom: 0; */
+  /*     transform: translateY(-50%); */
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+  padding-top: 22px;
 }
 
 header .sottomenu-voci {
-    padding: 30px 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  padding: 30px 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header .sottomenu-voci li {
-    font-size: var(--fontsize-voci-menu);
-    width: 100%;
-    text-align: left;
-    padding: 40px 0;
-    display: flex;
-    position: relative;
-    padding-left: 40px;
+  font-size: var(--fontsize-voci-menu);
+  width: 100%;
+  text-align: left;
+  padding: 40px 0;
+  display: flex;
+  position: relative;
+  padding-left: 40px;
 }
 
 header .sottomenu-voci .numero {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 header .sottomenu-voci a {
-    width: 100%;
-    display: block;
-    z-index: 4;
+  width: 100%;
+  display: block;
+  z-index: 4;
 }
 
 header .social {
-    width: 100%;
-    font-size: var(--fontsize-social);
-    color: var(--colore-social);
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  font-size: var(--fontsize-social);
+  color: var(--colore-social);
+  display: flex;
+  justify-content: space-evenly;
 }
 
 header .social-contatti {
-    width: 100%;
-    text-align: right;
-    margin-bottom: 100px;
-
+  width: 100%;
+  text-align: right;
+  margin-bottom: 100px;
 }
 
 header .email,
 .telefono {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 header .email {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 header .contatti {
-    display: flex;
-    justify-content: center;
-    z-index: 3;
-    position: relative;
-    background-color: var(--colore-primario);
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  position: relative;
+  background-color: var(--colore-primario);
 }
 
 header .contatti a {
-    display: flex;
-    align-items: center;
-    color: var(--colore-social);
+  display: flex;
+  align-items: center;
+  color: var(--colore-social);
 }
 
 header .contatti i {
-    color: var(--colore-social);
+  color: var(--colore-social);
 }
 
-
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 body {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
 .aperto {
-    transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
+header .menu-auto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+header .sottomenu-auto {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+}
+
+header .sottomenu-auto li {
+  padding: unset;
+}
+
+header .menu-comparsa {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--colore-primario);
+  left: 100%;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+}
+
+header .menu-comparsa li {
+  font-size: var(--fontsize-voci-menu);
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  flex-direction: column;
+}
 
 /*----- MAIN -----*/
 
 main {
-    background-color: var(--colore-primario);
-    margin: 70px 0;
+  background-color: var(--colore-primario);
+  margin: 70px 0;
 }
 
 main .immagine-home img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 main .immagine-titolo {
-    position: relative;
+  position: relative;
 }
 
 main .titolo {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
 }
 
 main .testo {
-    color: white;
-    margin: 20px 0;
+  color: white;
+  margin: 20px 0;
 }
 
 /* vetrina macchina singola */
 
 main h3 {
-    width: 100%;
-    text-align: center;
-    margin: 100px 0 80px 0;
-    color: var(--colore-elenco-macchine);
+  width: 100%;
+  text-align: center;
+  margin: 100px 0 80px 0;
+  color: var(--colore-elenco-macchine);
 }
 
 main .informazioni-generali {
-    background-color: var(--colore-vetrina-macchina);
-    border-radius: 20px;
-    margin-top: 20px;
+  background-color: var(--colore-vetrina-macchina);
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 main .vetrina-macchina {
-    overflow: hidden;
-    margin-bottom: 80px;
+  overflow: hidden;
+  margin-bottom: 80px;
 }
 
 main .modello-macchina {
-    width: 100%;
-    text-align: center;
-    color: var(--colore-testo-vetrine);
+  width: 100%;
+  text-align: center;
+  color: var(--colore-testo-vetrine);
 }
 
 main .informazioni-macchina,
 .prezzo-pulsante {
-    padding: 8px;
+  padding: 8px;
 }
 
 main .vetrina-macchina {
-    width: 100%;
+  width: 100%;
 }
 
 main .vetrina-macchina img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
 
 main .informazioni {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 main .informazione-singola {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 main .tipo-informazione {
-    color: var(--colore-testo-vetrine);
-    font-weight: 700;
+  color: var(--colore-testo-vetrine);
+  font-weight: 700;
 }
 
 main .informazione {
-    color: var(--colore-testo-vetrine);
+  color: var(--colore-testo-vetrine);
 }
 
 main .pulsante-informazioni {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 main .pulsante-informazioni a {
-    border: solid 1px white;
-    color: black;
-    background-color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
+  border: solid 1px white;
+  color: black;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 main .vetrina-macchine h1 {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /*----- PAGINA MACCHINA SINGOLA -----*/
 
 main .macchina-singola img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 main .macchina-singola .immagine-macchina {
-    border-radius: 20px;
-    overflow: hidden;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 main .descrizione-macchina {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 main .descrizione-singola {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 main .macchina-singola h1 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 main .informazioni-optiona h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 main .informazioni-optiona p {
-    list-style-type: disc;
-    margin-bottom: 5px;
+  list-style-type: disc;
+  margin-bottom: 5px;
 }
 
 main .informazioni-optiona i {
-    font-size: 10px;
-    margin-right: 20px;
+  font-size: 10px;
+  margin-right: 20px;
 }
 
 main .macchina-singola .pulsante {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0;
-    background-color: white;
-    border-radius: 20px;
-    padding: 10px 0;
-    text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 0;
+  text-transform: uppercase;
 }
 
 main .macchina-singola .pulsante a {
-    color: black;
-    font-weight: 700;
+  color: black;
+  font-weight: 700;
 }
 
 main .macchina-singola .galleria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 main .macchina-singola .galleria img {
-    width: 45%;
-    max-width: 45%;
-    margin-bottom: 30px;
-    border-radius: 20px;
+  width: 45%;
+  max-width: 45%;
+  margin-bottom: 30px;
+  border-radius: 20px;
 }
 
 main .immagine-macchina {
-    position: relative;
+  position: relative;
 }
 
 main .venduta {
-    position: absolute;
-    top: 50%;
-    transform: translatey(-50%);
-    left: 50%;
-    transform: translateX(-50%) translatey(-50%) rotate(326deg);
-    font-size: 75px;
-    opacity: 0.6;
-    text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: 50%;
+  transform: translateX(-50%) translatey(-50%) rotate(326deg);
+  font-size: 75px;
+  opacity: 0.6;
+  text-transform: uppercase;
 }
 
 /* modal */
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 50%;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
 }
 
 .modal-content {
-    animation-name: zoom;
-    animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-    from {
-        transform: scale(0)
-    }
+  from {
+    transform: scale(0);
+  }
 
-    to {
-        transform: scale(1)
-    }
+  to {
+    transform: scale(1);
+  }
 }
 
 .close {
-    position: absolute;
-    top: 100px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 
 /*----- SEZIONE CONTATTI -----*/
 
 main .contatti-benvenuto h1 {
-    font-size: var(--fontsize-social);
-    margin-bottom: 50px;
+  font-size: var(--fontsize-social);
+  margin-bottom: 50px;
 }
 
 main .contatti-benvenuto {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 main .contatti-orari,
 .contatti-contatti {
-    text-align: center;
-    margin-bottom: 80px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 main .contatti-orari h4 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 main .contatti-orari p,
 .contatti-contatti a {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 main .contatti-contatti h4 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 main .contatti-contatti .contatti {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .rettangolo-inclinato {
-    margin-top: 50px;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
 }
-
 
 /*----- FOOTER -----*/
 
 footer {
-    background-color: var(--colore-primario);
-    color: var(--colore-testo-vetrine);
+  background-color: var(--colore-primario);
+  color: var(--colore-testo-vetrine);
 }
 
 footer h3 {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 /* form */
 
 footer .contenirore-form-footer input,
 footer .contenirore-form-footer textarea {
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 30px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
 footer .contenirore-form-footer input:hover,
 footer .contenirore-form-footer textarea:hover {
-    border: solid 1px red;
+  border: solid 1px red;
 }
 
 footer .contenirore-form-footer input:focus,
 footer .contenirore-form-footer textarea:focus {
-    box-shadow: 0 0 10px 2px red;
+  box-shadow: 0 0 10px 2px red;
 }
 
 footer form .bottone {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 /* informazioni footer */
 
 footer h2 {
-    text-align: center;
-    margin-bottom: 35px;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 footer .informazioni-footer {
-    border-top: solid 1px var(--colore-linee-menu);
-    padding-top: 35px;
+  border-top: solid 1px var(--colore-linee-menu);
+  padding-top: 35px;
 }
 
 footer .logo-footer img {
-    width: auto;
-    height: 100%;
+  width: auto;
+  height: 100%;
 }
 
 footer .logo-footer {
-    height: 100px;
-    text-align: center;
+  height: 100px;
+  text-align: center;
 }
 
 footer .informazioni-azienda {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-    padding-bottom: 25px;
-    border-bottom: solid 1px var(--colore-linee-menu);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding-bottom: 25px;
+  border-bottom: solid 1px var(--colore-linee-menu);
 }
 
 footer .informazioni-azienda p {
-
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 footer .social-footer {
-    font-size: var(--fontsize-social);
-    display: flex;
-    justify-content: space-evenly;
-    margin: 40px 0;
+  font-size: var(--fontsize-social);
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0;
 }
