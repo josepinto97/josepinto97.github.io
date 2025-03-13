@@ -599,13 +599,22 @@ main .form-vendi-campi {
 
 main .form-vendi {
   padding: 15px;
-  background-color: var(--colore-vetrina-macchina);
-  border-radius: 20px;
+  /* background-color: var(--colore-vetrina-macchina); */
+  /* border-radius: 20px; */
 }
 
-main .campi-info-macchina{
+main .campi-info-macchina {
   padding: 10px;
+  background-color: var(--colore-vetrina-macchina);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding-bottom: unset;
 }
+
+main .campi-info-macchina input {
+  margin-bottom: 15px;
+}
+
 
 
 /*----- FOOTER -----*/
@@ -636,10 +645,10 @@ footer h3 {
   border: solid 1px red;
 }
 
-.contenirore-form-footer input:focus,
+/* .contenirore-form-footer input:focus,
 .contenirore-form-footer textarea:focus {
   box-shadow: 0 0 10px 2px red;
-}
+} */
 
 form .bottone {
   background-color: white;
