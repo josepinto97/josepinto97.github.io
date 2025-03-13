@@ -9,6 +9,12 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +40,7 @@
                 </div>
                 <div class="contenitore-icona-hamburger">
                     <!-- <i onclick="apri_menu()" id="menu_hamburger" class="menu-hamburger bi bi-list"></i> -->
-<!--                     <div class="menu-toggle" id="menu_hamburger" onclick="toggleMenu(), apri_menu()"> -->
+                    <!--                     <div class="menu-toggle" id="menu_hamburger" onclick="toggleMenu(), apri_menu()"> -->
                     <div class="menu-toggle" id="menu_hamburger" onclick="apri_menu(), toggleMenu()">
                         <span></span>
                         <span></span>
@@ -47,8 +53,10 @@
                     <!-- <i onclick="chiudi_menu()" class="container bi bi-x chiusura-menu"></i> -->
                     <ul class="sottomenu-voci container">
                         <li><i class="bi bi-shop icona-sfumata"> .</i><a href="index.html">Home</a></li>
-                        <li class="menu-auto" onclick="menu_auto()"><i class="bi bi-car-front icona-sfumata"> .</i><a>Auto <i class="freccia-sottomenu bi bi-chevron-right"></i></a></li>
-                        <li><i class="bi bi-person-lines-fill icona-sfumata"> .</i><a href="contatti.html">Contatti</a></li>
+                        <li class="menu-auto" onclick="menu_auto()"><i class="bi bi-car-front icona-sfumata">
+                                .</i><a>Auto <i class="freccia-sottomenu bi bi-chevron-right"></i></a></li>
+                        <li><i class="bi bi-person-lines-fill icona-sfumata"> .</i><a href="contatti.html">Contatti</a>
+                        </li>
                     </ul>
                     <div class="social-contatti container">
                         <div class="social">
@@ -59,12 +67,14 @@
                     </div>
                     <div class="menu-comparsa" id="menu_comparsa">
                         <ul>
-                            <li onclick="menu_auto()"><span>Indietro <i class="freccia-sottomenu bi bi-chevron-left"></i></span>
-                            <ul>
-                                <li><a href="index.html#macchine_vendita" onclick="apri_menu(), toggleMenu()">Auto in vendita</a></li>
-                                <li><a href="vendute.html">Auto vendute</a></li>
-                            </ul>
-                        </li>
+                            <li onclick="menu_auto()"><span>Indietro <i
+                                        class="freccia-sottomenu bi bi-chevron-left"></i></span>
+                                <ul>
+                                    <li><a href="index.html#macchine_vendita" onclick="apri_menu(), toggleMenu()">Auto
+                                            in vendita</a></li>
+                                    <li><a href="vendute.html">Auto vendute</a></li>
+                                </ul>
+                            </li>
 
                         </ul>
                     </div>
@@ -80,8 +90,43 @@
             <div class="macchina-singola">
                 <h1>Nome macchina</h1>
                 <div class="immagine-macchina">
-                    <span class="venduta">venduta</span>
-                    <img src="img/WW01.jpg" alt="">
+                    <!-- <span class="venduta">venduta</span> -->
+                    <!-- <img src="img/WW01.jpg" alt=""> -->
+
+
+
+
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/autobmw.jpg" class="d-block w-100" alt="..." style="height: 250px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/immagine-home.webp" class="d-block w-100" alt="..." style="height: 250px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/WW01.jpg" class="d-block w-100" alt="..." style="height: 250px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+
+
+
+
+
+
+
                 </div>
                 <div class="descrizione-macchina">
                     <div class="descrizione-1">
