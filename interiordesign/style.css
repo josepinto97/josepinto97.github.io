@@ -101,15 +101,13 @@ header .contenitore-header {
 }
 
 .linear-gradient {
-  background: linear-gradient(
-    to bottom,
-    var(--colore-primario),
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0)
-  );
+  background: linear-gradient(to bottom,
+      var(--colore-primario),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0));
 }
 
 header .contenitore-menu {
@@ -590,6 +588,26 @@ main .contatti-contatti .contatti {
   justify-content: center;
 }
 
+/*----- PAGINA VENDI LA TUA AUTO -----*/
+
+/* SEZIONE VENDI */
+
+main .form-vendi-campi {
+  display: flex;
+  gap: 20px;
+}
+
+main .form-vendi {
+  padding: 15px;
+  background-color: var(--colore-vetrina-macchina);
+  border-radius: 20px;
+}
+
+main .campi-info-macchina{
+  padding: 10px;
+}
+
+
 /*----- FOOTER -----*/
 
 footer {
@@ -605,25 +623,25 @@ footer h3 {
 
 /* form */
 
-footer .contenirore-form-footer input,
-footer .contenirore-form-footer textarea {
+.contenirore-form-footer input,
+.contenirore-form-footer textarea {
   width: 100%;
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 30px;
 }
 
-footer .contenirore-form-footer input:hover,
-footer .contenirore-form-footer textarea:hover {
+.contenirore-form-footer input:hover,
+.contenirore-form-footer textarea:hover {
   border: solid 1px red;
 }
 
-footer .contenirore-form-footer input:focus,
-footer .contenirore-form-footer textarea:focus {
+.contenirore-form-footer input:focus,
+.contenirore-form-footer textarea:focus {
   box-shadow: 0 0 10px 2px red;
 }
 
-footer form .bottone {
+form .bottone {
   background-color: white;
   color: black;
 }
