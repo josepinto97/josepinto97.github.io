@@ -615,6 +615,11 @@ main .campi-info-macchina input {
   margin-bottom: 15px;
 }
 
+main .titolo-vendi{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 
 
 /*----- FOOTER -----*/
@@ -664,7 +669,7 @@ footer h2 {
 
 footer .informazioni-footer {
   border-top: solid 1px var(--colore-linee-menu);
-  padding-top: 35px;
+ /*  padding-top: 35px; */
 }
 
 footer .logo-footer img {
@@ -675,15 +680,22 @@ footer .logo-footer img {
 footer .logo-footer {
   height: 100px;
   text-align: center;
+  margin: auto 0;
+}
+
+footer .immagine-informazioni{
+  border-bottom: solid 1px var(--colore-linee-menu);
 }
 
 footer .informazioni-azienda {
   display: flex;
-  flex-direction: column;
+ /*  flex-direction: column; */
   align-items: center;
   margin-top: 40px;
   padding-bottom: 25px;
-  border-bottom: solid 1px var(--colore-linee-menu);
+/*   border-bottom: solid 1px var(--colore-linee-menu); */
+justify-content: space-around;
+    gap: 20px;
 }
 
 footer .informazioni-azienda p {
