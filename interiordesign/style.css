@@ -101,13 +101,15 @@ header .contenitore-header {
 }
 
 .linear-gradient {
-  background: linear-gradient(to bottom,
-      var(--colore-primario),
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0));
+  background: linear-gradient(
+    to bottom,
+    var(--colore-primario),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 header .contenitore-menu {
@@ -190,7 +192,7 @@ header .sottomenu-voci li {
   font-size: var(--fontsize-voci-menu);
   width: 100%;
   text-align: left;
-  padding: 40px 0;
+  padding: 25px 0;
   display: flex;
   position: relative;
   padding-left: 40px;
@@ -328,6 +330,11 @@ main .titolo {
 main .testo {
   color: white;
   margin: 20px 0;
+}
+
+main video {
+  width: 100%;
+  height: auto;
 }
 
 /* vetrina macchina singola */
@@ -604,8 +611,8 @@ main .form-vendi {
 }
 
 main .campi-info-macchina {
-  padding: 10px;
-  background-color: var(--colore-vetrina-macchina);
+  /* padding: 10px; */
+  /*   background-color: var(--colore-vetrina-macchina); */
   border-radius: 20px;
   margin-bottom: 30px;
   padding-bottom: unset;
@@ -615,12 +622,82 @@ main .campi-info-macchina input {
   margin-bottom: 15px;
 }
 
-main .titolo-vendi{
+main .titolo-vendi {
   text-align: center;
   margin-bottom: 20px;
 }
 
+main .info {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  padding: 0 20px;
+  border-radius: 5px;
+  background-color: var(--colore-vetrina-macchina);
+}
 
+main .info div:first-child {
+  margin-top: 15px;
+}
+
+main .info.open {
+  max-height: 500px;
+}
+
+main button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*----- PAGINA SERVIZI-----*/
+
+main .servizio{
+  background-color: var(--colore-vetrina-macchina);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  width: 90%;
+}
+
+
+.img-descrizione {
+  display: flex;
+  flex-direction: column; /* Imposta la disposizione verticale */
+}
+
+.img-descrizione p {
+  width: 100%; /* Assicura che il testo occupi tutta la larghezza */
+}
+
+.img-descrizione div {
+  width: 100%; /* L'immagine prende tutta la larghezza disponibile */
+}
+
+.img-descrizione img {
+  width: 100%; /* L'immagine si adatta al contenitore */
+  height: auto;
+}
+
+main .pagina-servizi h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main .pagina-servizi h2{
+  margin-bottom: 20px;
+}
+
+main .titolo-opposto {
+  /* text-align: right; */
+  margin-left: auto;
+}
+
+/* main .titolo-opposto h2{
+  text-align: right;
+} */
 
 /*----- FOOTER -----*/
 
@@ -669,7 +746,7 @@ footer h2 {
 
 footer .informazioni-footer {
   border-top: solid 1px var(--colore-linee-menu);
- /*  padding-top: 35px; */
+  /*  padding-top: 35px; */
 }
 
 footer .logo-footer img {
@@ -683,19 +760,19 @@ footer .logo-footer {
   margin: auto 0;
 }
 
-footer .immagine-informazioni{
+footer .immagine-informazioni {
   border-bottom: solid 1px var(--colore-linee-menu);
 }
 
 footer .informazioni-azienda {
   display: flex;
- /*  flex-direction: column; */
+  /*  flex-direction: column; */
   align-items: center;
   margin-top: 40px;
   padding-bottom: 25px;
-/*   border-bottom: solid 1px var(--colore-linee-menu); */
-justify-content: space-around;
-    gap: 20px;
+  /*   border-bottom: solid 1px var(--colore-linee-menu); */
+  justify-content: space-around;
+  gap: 20px;
 }
 
 footer .informazioni-azienda p {
